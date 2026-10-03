@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Manage Events - Nowshera Events</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+    <!-- =========================
+         ADMIN NAVBAR
+    ========================== -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Nowshera Events - Admin
+        </div>
+
+        <div class="nav-links">
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="events.html">
+                Events
+            </a>
+
+            <a href="attendees.html">
+                Attendees
+            </a>
+
+            <a href="../events.html">
+                Public Events
+            </a>
+
+            <a href="#" onclick="adminLogout()">
+                Logout
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================
+         ADMIN EVENTS SECTION
+    ========================== -->
+
+    <section class="admin-section">
+
+        <h1>
+            Manage Events
+        </h1>
+
+
+        <!-- =========================
+             CREATE EVENT FORM
+        ========================== -->
+
+        <div class="admin-form">
+
+            <h2>
+                Create New Event
+            </h2>
+
+
+            <form id="createEventForm">
+
+
+                <!-- Event Title -->
+
+                <input
+                    type="text"
+                    id="eventTitle"
+                    placeholder="Event title"
+                    required
+                >
+
+
+                <!-- Event Description -->
+
+                <textarea
+                    id="eventDescription"
+                    placeholder="Event description"
+                ></textarea>
+
+
+                <!-- Event Date -->
+
+                <input
+                    type="date"
+                    id="eventDate"
+                    required
+                >
+
+
+                <!-- Event Time -->
+
+                <input
+                    type="time"
+                    id="eventTime"
+                    required
+                >
+
+
+                <!-- Event Location -->
+
+                <input
+                    type="text"
+                    id="eventLocation"
+                    placeholder="Location"
+                    required
+                >
+
+
+                <!-- Event Capacity -->
+
+                <input
+                    type="number"
+                    id="eventCapacity"
+                    placeholder="Capacity"
+                    min="1"
+                    required
+                >
+
+
+                <!-- Event Status -->
+
+                <select id="eventStatus">
+
+                    <option value="draft">
+                        Draft
+                    </option>
+
+                    <option value="published">
+                        Published
+                    </option>
+
+                </select>
+
+
+                <!-- Create Button -->
+
+                <button
+                    type="submit"
+                    class="btn"
+                >
+                    Create Event
+                </button>
+
+            </form>
+
+
+            <!-- Message -->
+
+            <p id="eventMessage"></p>
+
+        </div>
+
+
+        <!-- =========================
+             ALL EVENTS
+        ========================== -->
+
+        <h2 class="admin-heading">
+            All Events
+        </h2>
+
+
+        <div id="adminEventsContainer">
+
+            Loading events...
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         ADMIN JAVASCRIPT
+    ========================== -->
+
+    <script src="../js/admin.js"></script>
+
+</body>
+
+</html>

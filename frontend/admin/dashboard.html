@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard - Nowshera Events</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Nowshera Events - Admin
+        </div>
+
+        <div class="nav-links">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="events.html">Events</a>
+            <a href="attendees.html">Attendees</a>
+            <a href="../events.html">Public Events</a>
+            <a href="../index.html">Home</a>
+            <a href="#" onclick="adminLogout()">Logout</a>
+        </div>
+
+    </nav>
+
+
+    <section class="admin-section">
+
+        <h1>Admin Dashboard</h1>
+
+        <div id="dashboardMessage">
+            Loading dashboard...
+        </div>
+
+
+        <div class="dashboard-grid">
+
+            <div class="dashboard-card">
+                <h2 id="totalEvents">0</h2>
+                <p>Total Events</p>
+            </div>
+
+            <div class="dashboard-card">
+                <h2 id="draftEvents">0</h2>
+                <p>Draft Events</p>
+            </div>
+
+            <div class="dashboard-card">
+                <h2 id="publishedEvents">0</h2>
+                <p>Published Events</p>
+            </div>
+
+            <div class="dashboard-card">
+                <h2 id="completedEvents">0</h2>
+                <p>Completed Events</p>
+            </div>
+
+            <div class="dashboard-card">
+                <h2 id="cancelledEvents">0</h2>
+                <p>Cancelled Events</p>
+            </div>
+
+            <div class="dashboard-card">
+                <h2 id="totalRegistrations">0</h2>
+                <p>Total Registrations</p>
+            </div>
+
+            <div class="dashboard-card">
+                <h2 id="activeRegistrations">0</h2>
+                <p>Active Registrations</p>
+            </div>
+
+            <div class="dashboard-card">
+                <h2 id="cancelledRegistrations">0</h2>
+                <p>Cancelled Registrations</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="../js/admin.js"></script>
+
+</body>
+
+</html>

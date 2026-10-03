@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Attendees - Nowshera Events</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Nowshera Events - Admin
+        </div>
+
+        <div class="nav-links">
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="events.html">
+                Events
+            </a>
+
+            <a href="attendees.html">
+                Attendees
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <section class="admin-section">
+
+        <h1>Event Attendees</h1>
+
+
+        <input
+            type="text"
+            id="attendeeSearch"
+            placeholder="Search name or email"
+            class="search-input"
+        >
+        <select id="statusFilter" class="search-input">
+
+    <option value="all">
+        All Statuses
+    </option>
+
+    <option value="registered">
+        Registered
+    </option>
+
+    <option value="cancelled">
+        Cancelled
+    </option>
+
+</select>
+
+
+        <div class="attendee-actions">
+
+            <button
+                class="btn"
+                onclick="copyAttendees()"
+            >
+                Copy
+            </button>
+
+            <button
+                class="btn"
+                onclick="exportAttendees()"
+            >
+                Export CSV
+            </button>
+
+        </div>
+
+
+        <div id="attendeeSummary">
+            Loading...
+        </div>
+
+
+        <div id="attendeesContainer">
+
+            Loading attendees...
+
+        </div>
+
+    </section>
+
+
+    <script src="../js/admin.js"></script>
+
+</body>
+
+</html>
